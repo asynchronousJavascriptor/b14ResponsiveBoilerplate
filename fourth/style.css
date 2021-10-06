@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(245, 243, 238);
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+#nav a{
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+#nav a:before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 10%;
+    background-color: red;
+    bottom: 0;
+    left: 50%;
+    transition: .25s all linear;
+}
+
+#nav a:hover:before{
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+#icons i{
+    margin-left: 30px;
+}
+
+#text{
+    display: flex;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+#text h1{
+    font-size: 90px;
+}
+
+
+#text #textbg{
+    position: relative;
+    margin-left: 25px;
+}
+
+#textbg #bg{
+    position: absolute;
+    bottom: 21px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 98%;
+    height: 15%;
+    background-color: rgb(255, 166, 0);
+}
+
+#textbg h1{
+    position: relative;
+    z-index: 3;
+}
+
+#arrowtext{
+    /* background-color: red; */
+    position: absolute;
+    right: 35%;
+    top: 26%;
+    display: flex;
+    align-items: center;
+}
+
+#arrowtext h1{
+    font-size: 110px;
+}
+
+#arrowtext i{
+    position: absolute;
+    right: -60px;
+    top: 60%;
+    transform: translate(0, -50%);
+    font-size: 90px;
+}
+
+#golf{
+    position: absolute;
+    right: 15%;
+    top: 30%;
+    filter: blur(8px);
+    width: 130px;
+}
+
+#circ1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    filter: blur(50px);
+    background: linear-gradient(to right bottom, rgb(255, 72, 0), rgb(255, 197, 5));
+}
+
+#circ2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    filter: blur(50px);
+    background: linear-gradient(to right bottom, rgb(59, 209, 255), rgb(99, 230, 202));
+}
+
+#camera{
+    width: 500px;
+}
+
+#rtext{
+    text-align: right;
+    position: absolute;
+    bottom: 25%;
+    right: 6%;
+    width: 450px;
+    /* background-color: red; */
+}
+
+#rtext h1{
+    font-family: "Ogg";
+    font-size: 40px;
+}
+
+#rtext h4{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#rtext button{
+    padding: 10px 22px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 166, 0);
+    color: rgb(255, 166, 0);
+    border-radius: 5px;
+}
+
+#rtext button:hover{
+    background-color: rgb(255, 166, 0);
+    color: #fff;
+    cursor: pointer;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 211, 65);
+}
+
+#about h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 38px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+#about h1 span{
+    font-weight: 900;
+}
+
+#cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 250px;
+    padding: 0 30px;
+    /* background-color: red; */
+    margin-top: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgb(139, 107, 0);
+    /* background-color: rebeccapurple; */
+}
+
+.card i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: rgb(255, 197, 5);
+}
+
+.card h4{
+    margin: 5px 0;
+}
+
+.card p{
+    text-align: center;
+    font-size: 12px;
+}
